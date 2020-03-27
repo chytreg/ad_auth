@@ -1,10 +1,26 @@
-# README
-クランチの記事です。
+## Devise & Active Directory integration
 
-Devise を使って Active Directory 認証を実装する  
-[ブログ] https://toyocy.qrunch.io/entries/6NLmoQWASoJ5Sy1W  
-[Qrunch.net] https://qrunch.net/@toyocy/entries/6NLmoQWASoJ5Sy1W #qrunch  
+Source: https://medium.com/@takatoyo/step-by-step-implement-active-directory-auth-with-devise-33590bd3e3f1
 
-Devise を使って Active Directory から情報を取得する方法  
-[ブログ] https://toyocy.qrunch.io/entries/kZzjqbiDPgLInAwc  
-[Qrunch.net] https://qrunch.net/@toyocy/entries/kZzjqbiDPgLInAwc #qrunch  
+Configured with sample public LDAP: https://www.zflexldapadministrator.com/index.php/blog/82-free-online-ldap
+
+## Development setup
+
+It's based on https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development
+You need only docker to develop the application.
+All the shell commands pls run inside `docker-compose run --rm runner` or `dip bash`
+
+To improve docker interaction on development we recommend to use [dip](https://github.com/bibendi/dip#dip)
+
+
+```
+provision
+compose up web
+```
+
+Same can be achieved using docker-compose:
+
+```
+docker-compose run --rm runner sh -c 'bin/setup'
+docker-compose up web
+```
