@@ -4,6 +4,11 @@ Source: https://medium.com/@takatoyo/step-by-step-implement-active-directory-aut
 
 Configured with sample public LDAP: https://www.zflexldapadministrator.com/index.php/blog/82-free-online-ldap
 
+```
+user: guest1
+pass: guest1password
+```
+
 ## Development setup
 
 It's based on https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development
