@@ -28,12 +28,12 @@ authorizations: &AUTHORIZATIONS
 ## Environment
 
 development:
-  host: 192.168.10.200
+  host: www.zflexldap.com
   port: 389
-  attribute: sAMAccountName
-  base: DC=example,DC=com
-  admin_user: CN=Administrator,CN=Users,DC=example,DC=com
-  admin_password: "Password@1"
+  attribute: uid
+  base: ou=users,ou=guests,dc=zflexsoftware,dc=com
+  admin_user: cn=ro_admin,ou=sysadmins,dc=zflexsoftware,dc=com
+  admin_password: zflexpass
   ssl: false
   # <<: *AUTHORIZATIONS
 
